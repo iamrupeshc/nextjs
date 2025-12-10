@@ -3,6 +3,13 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  /* Colors */
+  --color-brightColor: #039BAB;
+  --color-backgroundColor: #03C9D7;
+  --color-textColor: #333333;
+}
+
 :root {
   --radius: 0.65rem;
   --background: oklch(1 0 0);
