@@ -16,12 +16,13 @@ export function LoginForm({
   ...props
 }: React.ComponentProps<"div">) {
   return (
-    <div className={cn("flex flex-col gap-6", className)} {...props}>
-      <Card className="overflow-hidden p-0">
-        <CardContent className="grid p-0 md:grid-cols-2">
+    <div className={cn("flex flex-col gap-6  ", className)} {...props}>
+      <Card className="overflow-hidden p-0 drop-shadow-xl/100">
+        <CardContent className="grid p-0 md:grid-cols-2 ">
           <div className="bg-muted relative hidden md:block">
             <Image
               src={mountain}
+              loading="eager"
               alt="Image"
               className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
             />
@@ -56,7 +57,7 @@ export function LoginForm({
                 <Input id="password" type="password" required />
               </Field>
               <Field>
-                <Button type="submit">Login</Button>
+                <Button type="submit" className="font-bold bg-white text-indigo-600 hover:bg-indigo-600 hover:text-white">Login</Button>
               </Field>
               
             </FieldGroup>
